@@ -93,13 +93,25 @@ GEM
       xpath (~> 2.0)
     columnize (0.9.0)
     dotenv (2.0.2)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
+    hashie (3.4.2)
     http-2 (0.7.0)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    instagram (1.1.5)
+      faraday (>= 0.7, < 0.10)
+      faraday_middleware (>= 0.8, < 0.10)
+      hashie (>= 0.4.0)
+      multi_json (~> 1.0, >= 1.0.3)
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.7.0)
+    multi_json (1.11.2)
+    multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     rack (1.6.4)
@@ -123,6 +135,7 @@ DEPENDENCIES
   bundler
   byebug
   capybara
+  instagram
   lotus-assets!
   lotus-controller!
   lotus-helpers!

@@ -46,32 +46,7 @@
     <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
       <main class="mdl-layout__content">
         <div class="demo-blog__posts mdl-grid">
-          <!-- start -->
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--6-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Coffee Pic</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--6-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Coffee Pic</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
-          <!-- end -->
+          <%= yield %>
         </div>
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
@@ -87,7 +62,7 @@
       <div class="mdl-layout__obfuscator"></div>
     </div>
     <a href="https://github.com/jodosha/instants" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
-    <%= javascript 'material.min' %>
+    <%= javascript 'https://code.jquery.com/jquery-2.1.4.min.js', 'material.min', 'application' %>
   </body>
   <script>
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {

@@ -1,0 +1,11 @@
+<div class="mdl-cell mdl-cell--12-col">
+  <h1 id="profile-username"><%= user.username %></h1>
+</div>
+
+<% pictures.each do |picture| %>
+  <div class="mdl-card mdl-cell instant-pic mdl-cell--6-col" data-image-url="<%= image_path(picture.url) %>">
+    <div class="mdl-card__media mdl-color-text--grey-50">
+      <h3><%= link_to picture.caption || "Instant", picture.link %></h3>
+    </div>
+  </div>
+<% end %>

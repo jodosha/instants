@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bundler'
 gem 'rake'
+gem 'instagram', require: false
 
 gem 'panther', git: 'git@github.com:jodosha/panther.git'
 
