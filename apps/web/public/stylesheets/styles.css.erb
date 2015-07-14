@@ -1,5 +1,5 @@
 body {
-  background-image: url('<%= image_path '/images/bg.jpg' %>');
+  background-image: url('<%= image_path "/images/bg.jpg" %>');
   background-size: cover;
   background-attachment: fixed;
   /* FIXME: Temp. workaround for vertical scrollbars */
@@ -7,7 +7,7 @@ body {
 }
 
 body::before {
-    /* background-image: url('/images/head.jpg'); */
+    /* background-image: url('<%= image_path "/images/head.jpg" %>'); */
     background-size: cover;
     background-attachment: fixed;
     content: '';
@@ -193,7 +193,7 @@ body .demo-blog {
           order: -1;
 }
 .demo-blog .coffee-pic .mdl-card__media {
-  background-image: url('/images/coffee.jpg');
+  background-image: url('<%= image_path "/images/coffee.jpg" %>');
 }
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-box;
@@ -239,10 +239,10 @@ body .demo-blog {
   border-bottom-right-radius: 2px;
 }
 .demo-blog .on-the-road-again .mdl-card__media {
-  background-image: url('/images/road.jpg');
+  background-image: url('<%= image_path "/images/road.jpg" %>');
 }
 .demo-blog .shopping .mdl-card__media {
-  background-image: url('/images/shopping.jpg');
+  background-image: url('<%= image_path "/images/shopping.jpg" %>');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
@@ -306,7 +306,7 @@ body .demo-blog {
   background-color: transparent;
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('/images/road_big.jpg');
+  background-image: url('<%= image_path "/images/road_big.jpg" %>');
   height: 280px;
 }
 .demo-blog--blogpost .comments {
@@ -497,7 +497,7 @@ body .demo-blog {
 .demo-blog .minilogo {
   width: 44px;
   height: 44px;
-  background-image: url('/images/avatar.png');
+  background-image: url('<%= image_path "/images/avatar.png" %>');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -526,13 +526,13 @@ body .demo-blog {
   border-radius: 2px;
 }
 .social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+  background-image: url('<%= image_path "https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png" %>');
 }
 .social-btn__blogger {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+  background-image: url('<%= image_path "https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png" %>');
 }
 .social-btn__gplus {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+  background-image: url('<%= image_path "https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png" %>');
 }
 .social-btn__share {
   color: rgba(0, 0, 0, 0.54);
