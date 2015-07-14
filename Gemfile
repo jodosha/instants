@@ -15,6 +15,10 @@ gem 'lotus-model',       require: false, github: 'lotus/model'
 gem 'lotus-assets',      require: false, path: '../lotus/assets'
 gem 'lotusrb',                           path: '../lotus/lotus'
 
+group :development do
+  gem 'byebug', require: false
+end
+
 group :test do
   gem 'minitest'
   gem 'capybara'

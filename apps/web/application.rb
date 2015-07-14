@@ -199,6 +199,22 @@ module Web
         include Lotus::Helpers
         include Lotus::Assets::Helpers
       end
+
+      Lotus::Assets.configure do
+        compile true
+
+        define :stylesheet do
+          sources << [
+            __dir__ + '/public/stylesheets'
+          ]
+        end
+
+        define :javascript do
+          sources << [
+            __dir__ + '/public/javascripts'
+          ]
+        end
+      end
     end
 
     ##

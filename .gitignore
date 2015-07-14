@@ -1,3 +1,4 @@
 /db/instants_development
 /db/instants_test
 .DS_Store
+/public/assets/**/*
