@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 gem 'bundler'
 gem 'rake'
 gem 'instagram', require: false
+gem 'faraday',   require: false
 
-gem 'panther', git: 'git@github.com:jodosha/panther.git'
+# gem 'panther', git: 'git@github.com:jodosha/panther.git'
+gem 'panther', path: '../spike-panther'
 
 gem 'lotus-utils',       require: false, github: 'lotus/utils'
 gem 'lotus-router',      require: false, github: 'lotus/router'

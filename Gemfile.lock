@@ -51,14 +51,6 @@ GIT
       lotus-utils (~> 0.5)
       tilt (~> 2.0, >= 2.0.1)
 
-GIT
-  remote: git@github.com:jodosha/panther.git
-  revision: 8e64b1bb37d6e55802f7269f874855b089781682
-  specs:
-    panther (0.1.0)
-      http-2 (~> 0.7)
-      rack (~> 1.6)
-
 PATH
   remote: ../lotus/assets
   specs:
@@ -80,6 +72,13 @@ PATH
       shotgun (~> 0.9)
       thor (~> 0.19)
 
+PATH
+  remote: ../spike-panther
+  specs:
+    panther (0.1.0)
+      http-2 (~> 0.7)
+      rack (~> 1.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -95,7 +94,7 @@ GEM
     dotenv (2.0.2)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.9.1)
+    faraday_middleware (0.9.2)
       faraday (>= 0.7.4, < 0.10)
     hashie (3.4.2)
     http-2 (0.7.0)
@@ -135,6 +134,7 @@ DEPENDENCIES
   bundler
   byebug
   capybara
+  faraday
   instagram
   lotus-assets!
   lotus-controller!

@@ -1,5 +1,5 @@
 require './config/environment'
-require 'rack/static'
+# require 'rack/static'
 
-use Rack::Static, urls: ['/assets'], root: 'public'
+# use Rack::Static, urls: ['/assets'], root: 'public'
 run Lotus::Container.new

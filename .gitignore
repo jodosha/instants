@@ -2,3 +2,5 @@
 /db/instants_test
 .DS_Store
 /public/assets/**/*
+/log/*
+/tmp/*

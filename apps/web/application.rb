@@ -226,6 +226,10 @@ module Web
 
       # Serve static assets during development
       serve_assets      true
+
+      assets << [
+        '../../public'
+      ]
     end
 
     ##

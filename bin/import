@@ -10,10 +10,5 @@ Instagram.configure do |config|
   config.client_secret = ENV['INSTAGRAM_CLIENT_SECRET']
 end
 
-user = Instagram.user_search(ARGV[0]).first
-raise "User not found: #{ ARGV[0] }" if user.nil?
-
-user = UserRepository.create_from_remote(user)
-Instagram.user_recent_media(user.instagram_id, count: 100).each do |media|
-  PictureRepository.create_from_media(user, media)
-end
+result = ImportPictures.new(ARGV[0]).call
+raise result.error unless result.success?
