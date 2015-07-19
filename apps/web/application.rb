@@ -176,7 +176,7 @@ module Web
       #
       # security.content_security_policy "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';"
 
-      # http2 true
+      push_promises true
 
       ##
       # FRAMEWORKS

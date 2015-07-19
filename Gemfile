@@ -6,7 +6,8 @@ gem 'instagram', require: false
 gem 'faraday',   require: false
 
 # gem 'panther', git: 'git@github.com:jodosha/panther.git'
-gem 'panther', path: '../spike-panther'
+# gem 'panther', path: '../spike-panther'
+# gem 'puma'
 
 gem 'lotus-utils',       require: false, github: 'lotus/utils'
 gem 'lotus-router',      require: false, github: 'lotus/router'
@@ -15,8 +16,8 @@ gem 'lotus-helpers',     require: false, github: 'lotus/helpers'
 gem 'lotus-controller',  require: false, github: 'lotus/controller'
 gem 'lotus-view',        require: false, github: 'lotus/view'
 gem 'lotus-model',       require: false, github: 'lotus/model'
-gem 'lotus-assets',      require: false, path: '../lotus/assets'
-gem 'lotusrb',                           path: '../lotus/lotus'
+gem 'lotus-assets',      require: false, github: 'lotus/assets', branch: 'thread-cache'
+gem 'lotusrb',                           github: 'lotus/lotus',  branch: 'push-promise'
 
 group :development do
   gem 'byebug', require: false
